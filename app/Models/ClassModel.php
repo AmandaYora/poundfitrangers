@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class ClassModel extends Model
 {
-    protected $table = 'Classes';  // nama tabel
+    protected $table = 'classes';  // nama tabel
     protected $primaryKey = 'classId';  // primary key tabel
 
     protected $returnType = 'array';  // tipe return

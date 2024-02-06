@@ -175,7 +175,7 @@ class Home extends BaseController
                             if ($bookingModel->insert($bookingData)) {
                                 $emailDetails = [
                                     'targetEmail' => $email,
-                                    'subject' => 'Kelas Olahraga',
+                                    'subject' => 'Kelas PoundFit',
                                     'messageContent' => $this->generateHtml('Pemberitahuan',$bMessage),
                                     'isHtml' => true
                                 ];

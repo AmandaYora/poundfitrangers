@@ -288,7 +288,7 @@ class Dashboard extends BaseController
 
             $emailDetails = [
                 'targetEmail' => $customerEmail,
-                'subject' => 'Kelas Olahraga',
+                'subject' => 'Kelas PoundFit',
                 'messageContent' => $this->generateHtml('Pemberitahuan','Harap disimpan berkas yang kami lampirkan'),
                 'isHtml' => true,
                 'attachments' => [$pdfPath]
@@ -457,7 +457,7 @@ class Dashboard extends BaseController
             </head>
             <body>
                 <div class="header">
-                    <h1>Daftar Peserta Class Olahraga</h1>
+                    <h1>Daftar Peserta Class PoundFit</h1>
                     <p>Code: {$code}</p>
                 </div>
                 <table>

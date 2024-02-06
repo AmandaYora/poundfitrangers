@@ -240,7 +240,7 @@ abstract class BaseController extends Controller
             $html .= "<h1>Bukti Pembayaran</h1>";
             $html .= "<p>Terima kasih, Bapak/Ibu <strong>{$data['nama']}</strong>. Kami telah menerima pembayaran Anda sebesar:</p>";
             $html .= "<h2>Rp. " . number_format((int)str_replace(',', '', $data['nominal']), 0, ',', '.') . "</h2>";
-            $html .= "<p>Transaksi ini dilakukan pada <strong>{$data['tanggal_transfer']}</strong> dan ditujukan untuk kegiatan Kelas Olahraga yang akan diselenggarakan pada tanggal <strong>{$data['tanggal_kegiatan']}</strong>.</p>";
+            $html .= "<p>Transaksi ini dilakukan pada <strong>{$data['tanggal_transfer']}</strong> dan ditujukan untuk kegiatan Kelas PoundFit yang akan diselenggarakan pada tanggal <strong>{$data['tanggal_kegiatan']}</strong>.</p>";
             $html .= "<p class='footer'>Mohon simpan dan tunjukkan bukti ini saat hadir di kelas.</p>";
         } elseif ($data['status'] == 'reject') {
             $html .= "<h1>Pemberitahuan Penolakan Pembayaran</h1>";
