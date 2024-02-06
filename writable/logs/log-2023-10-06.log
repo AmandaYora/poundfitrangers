@@ -1,0 +1,10 @@
+CRITICAL - 2023-10-06 13:44:37 --> Invalid file: "admin/Customers.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/Customers.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/Customers', [], true)
+ 3 APPPATH\Controllers\admin\Dashboard.php(61): view('admin/Customers')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin\Dashboard->customers()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\dragon\\public\\index.php')
