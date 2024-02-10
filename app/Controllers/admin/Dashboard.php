@@ -415,7 +415,7 @@ class Dashboard extends BaseController
         $bookingModel = new BookingModel();
         $bookingModel->join('customers', 'customers.customerId = bookings.customerId');
         $bookingModel->join('classes', 'classes.classId = bookings.classId');
-        $bookings = $bookingModel->where('code', $code)->findAll();
+        $bookings = $bookingModel->where('code', $code)->orderBy('amount', 'ASC')->findAll();
 
         // HTML dengan desain lebih profesional
         $html = <<<HTML
